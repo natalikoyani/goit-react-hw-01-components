@@ -1,0 +1,33 @@
+.item {
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px, rgb(0 0 0 / 14%) 0px 3px 4px 0px,
+      rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.avatar {
+    outline: .1px solid rgb(196, 196, 196);
+    border-radius: 5px;
+}
+
+.status {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+}
+
+.isOnline {
+    composes: status;
+    background-color: green;
+}
+
+.isOffline {
+    composes: status;
+    background-color: tomato;
+}
